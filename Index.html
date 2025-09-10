@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ポモドーロ</title>
+  <link rel="stylesheet" href="Pomodoro.css">
+</head>
+<body>
+
+  <div class="app-container">
+
+    <h1>ポモドーロ</h1>
+
+    <!-- Setup Container -->
+    <div id="setupContainer">
+      <input type="text" id="goalInput" placeholder="今日の目標は何ですか？">
+
+      <!-- Group work/break inputs neatly -->
+      <div class="time-inputs">
+        <label>
+          ワーク (分):
+          <input type="number" id="workInput" value="25" min="1">
+        </label>
+        <label>
+          ブレーク (分):
+          <input type="number" id="breakInput" value="5" min="1">
+        </label>
+      </div>
+
+      <button id="setupBtn">セット</button>
+      <p id="goalDisplay"></p>
+    </div>
+
+    <!-- Timer Container -->
+    <div id="timerContainer" style="display:none;">
+      <h2 id="timerDisplay" class="timer-display">25:00</h2>
+
+      <div id="timerControls" class="button-group">
+        <button id="startBtn">スタート</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="resetBtn">レセット</button>
+        <button id="quitBtn">Quit</button>
+      </div>
+    </div>
+
+  </div><!-- /.app-container -->
+
+  <script src="Pomodoro.js"></script>
+</body>
+</html>
