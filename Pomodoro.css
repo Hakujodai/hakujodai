@@ -1,0 +1,114 @@
+/* 🌟 Body: clean, full centering */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;  /* horizontal center */
+  align-items: center;      /* vertical center */
+  background-color: #FFDB57;
+  font-family: Jackeyfont, sans-serif;
+  color: #293053;
+  text-align: center;
+}
+
+/* 🌟 Main container */
+.app-container {
+  min-width: 10px;
+  width: min(90%, 900px); /* flexible, max 800px */
+  min-height: 10px;
+  max-height: 1000px;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-sizing: border-box; /* so padding doesn’t overflow */
+}
+
+/* 🌟 Title */
+h1 {
+  margin-top: -3vh;
+  font-size: clamp(4rem, 8vw, 6rem);
+  color: #1e243a;
+}
+
+/* 🌟 Text input */
+#goalInput {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto; /* center inside */
+  background-color: #5A7C53;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  color: #293053;
+  font-family: Jackeyfont, sans-serif;
+  text-align: center;
+}
+
+/* 🌟 Number inputs */
+input[type="number"] {
+  width: 3rem;
+  background-color: #293053;
+  color: #FFDB57;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-family: Jackeyfont, sans-serif;
+  padding: 0.3rem;
+  appearance: textfield;
+}
+
+/* 🌟 Labels */
+label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #5A7C53;
+  color: white;
+  padding: 0.4rem 0.6rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin: 0.3rem;
+}
+
+/* 🌟 Input groups (T-shape layout helper) */
+.time-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.set-input {
+  display: flex;
+  justify-content: center;
+}
+
+/* 🌟 Buttons */
+button {
+  padding: 0.6rem 1.2rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #293053;
+  color: #FFDB57;
+  transition: background 0.3s ease;
+  font-family: Jackeyfont, sans-serif;
+}
+
+button:hover {
+  background: #1e243a;
+}
+
+/* 🌟 Button group */
+.button-group {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
